@@ -19,9 +19,9 @@ It has ReST APIs for performing CRUD operations from/to the database and render 
     - In Development Mode, by default web service uses [Embedded H2 database](https://spring.io/guides/gs/accessing-data-jpa/) for persisting and retrieving recipes details.
     - Command to execute:
    ```
-        java -jar target/recipes-authoring-command-service-0.0.1-SNAPSHOT.jar  --spring.profiles.active=dev --logging.level.root=INFO
+        java -jar target/recipes-authoring-command-service-0.0.1-SNAPSHOT.jar  --spring.profiles.active=dev
    ```
-    - On successfull start, one should notice log message on console `Tomcat started on port(s): 8080 (http)` and have web service listening for web requests at port 8080
+    - On successfull start , application should serve requests at port 8080
 
 * **In Production, In can use MYSQL database**
     - set the required configuration parameters in application.yaml file and create a table as per RecipeEntity
